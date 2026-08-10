@@ -1,8 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave01", "Lektion01\Opgave01\Opgave01.csproj", "{D57A9130-1C39-46BD-BA55-2988E4D76B56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lektion01", "Lektion01", "{D6114DE5-9F91-4DBA-9A2B-A15D5BEA042E}"
+	ProjectSection(SolutionItems) = preProject
+		Lektion01\opgaver.md = Lektion01\opgaver.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Slides", "Slides", "{944F8351-978C-45D7-B330-83C3835455E4}"
+	ProjectSection(SolutionItems) = preProject
+		Lektion01\Slides\EcoSystem.md = Lektion01\Slides\EcoSystem.md
+		Lektion01\Slides\Properties.md = Lektion01\Slides\Properties.md
+		Lektion01\Slides\Records.md = Lektion01\Slides\Records.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D57A9130-1C39-46BD-BA55-2988E4D76B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57A9130-1C39-46BD-BA55-2988E4D76B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57A9130-1C39-46BD-BA55-2988E4D76B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57A9130-1C39-46BD-BA55-2988E4D76B56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D57A9130-1C39-46BD-BA55-2988E4D76B56} = {D6114DE5-9F91-4DBA-9A2B-A15D5BEA042E}
+		{944F8351-978C-45D7-B330-83C3835455E4} = {D6114DE5-9F91-4DBA-9A2B-A15D5BEA042E}
 	EndGlobalSection
 EndGlobal
