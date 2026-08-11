@@ -1,11 +1,17 @@
-﻿namespace Opgave02;
+using System.Text.Json;
+
+namespace Opgave02;
 
 class Program
 {
     static void Main(string[] args)
     {
-      var potterCharacters = GetPotterJson();
+        string json = GetPotterJson();
+        
+        // TODO: Deserialiser JSON-strengen til en liste af objekter (opret en model i Opgave02/model mappen)
+        // TODO: Udskriv navn og kollegium (HogwartsHouse) for alle karakterer
     }
+
 
     public static string GetPotterJson()
     {
