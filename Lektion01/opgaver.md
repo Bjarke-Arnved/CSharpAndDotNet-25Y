@@ -10,7 +10,7 @@ I mappen `Opgave01/model` finder I følgende `record` modeller:
 - `OrderLine(Item Item, int Quantity)` - Repræsenterer en ordrelinje med en vare og et antal.
 - `Order(List<OrderLine> Lines)` - Repræsenterer en ordre bestående af en liste af ordrelinjer.
 
-Åbn [Program.cs](file:///c:/dotNet/CSharpAndDotNet/Lektion01/Opgave01/Program.cs), hvor der er oprettet tre hjælpemetoder som returnerer C#-objekter: `GetItem()`, `GetOrder()` og `GetOrders()`.
+Åbn opgave01/Program.cs, hvor der er oprettet tre hjælpemetoder som returnerer C#-objekter: `GetItem()`, `GetOrder()` og `GetOrders()`.
 
 ---
 
@@ -55,21 +55,21 @@ Console.WriteLine(jsonString);
 
 I denne opgave skal I arbejde med JSON-deserialisering. I skal konvertere en JSON-streng med Harry Potter karakterer til C#-objekter og udskrive/filtrere dataene.
 
-JSON-dataene hentes via metoden `GetPotterJson()` i [Opgave02/Program.cs](file:///c:/dotNet/CSharpAndDotNet/Lektion01/Opgave02/Program.cs).
+JSON-dataene hentes via metoden `GetPotterJson()` i [Opgave02/Program.cs].
 
 Mappen `Opgave02/model` er oprettet til at indeholde de domænemodeller (klasser eller records), I skal bruge.
 
 ---
 
 ### Opgave 2.1: Opret en model til karaktererne
-1. Undersøg strukturen af JSON-dataene i `GetPotterJson()` i [Opgave02/Program.cs](file:///c:/dotNet/CSharpAndDotNet/Lektion01/Opgave02/Program.cs).
+1. Undersøg strukturen af JSON-dataene i `GetPotterJson()` i [Opgave02/Program.cs].
 2. Opret en ny `record` eller `class` (f.eks. `PotterCharacter`) i mappen `Opgave02/model`.
 3. Tilføj egenskaber, der matcher feltnavnene i JSON:
 
 ---
 
 ### Opgave 2.2: Deserialiser JSON-strengen
-1. Åbn [Opgave02/Program.cs](file:///c:/dotNet/CSharpAndDotNet/Lektion01/Opgave02/Program.cs).
+1. Åbn [Opgave02/Program.cs].
 2. Hent JSON-strengen fra `GetPotterJson()`.
 3. Brug `JsonSerializer.Deserialize<List<PotterCharacter>>(json, options)` til at konvertere JSON-strengen til en liste af objekter.
    - **Husk:** Brug `JsonSerializerOptions` med `PropertyNameCaseInsensitive = true`, så feltnavnene i JSON matcher egenskabsnavnene uanset store/små bogstaver.
@@ -77,7 +77,7 @@ Mappen `Opgave02/model` er oprettet til at indeholde de domænemodeller (klasser
 ---
 
 ### Opgave 2.3: Udskriv og filtrer data
-Når I har deseriliseret listen, skal I løse følgende i `Program.cs`:
+Når I har deserialiseret listen, skal I løse følgende i `Program.cs`:
 1. Udskriv `FullName` og `HogwartsHouse` for alle karaktererne i konsollen.
 2. Udskriv alle karakterer, der tilhører kollegiet **Gryffindor**.
 3. Udskriv navnene på de karakterer, der har børn (`Children.Count > 0`), samt børnenes navne.

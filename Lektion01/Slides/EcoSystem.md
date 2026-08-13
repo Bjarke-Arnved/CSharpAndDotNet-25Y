@@ -33,7 +33,7 @@ footer: 'C# & .NET Undervisning'
 
 ---
 
-## 2. .Net Historie
+## 2. .NET's Historie
 
 - **2002**: .NET Framework 1.0 *(Kun Windows)*
 - **2016**: .NET Core 1.0 *(Cross-platform & Open Source)*

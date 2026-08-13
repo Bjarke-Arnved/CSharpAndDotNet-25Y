@@ -93,7 +93,7 @@ Man opretter en **ny kopi** med de ønskede ændringer via `with` nøgleordet.
 ```csharp
 var original = new Person("Mette", "Frederiksen");
 
-# Opretter en kopi med ændret efternavn
+// Opretter en kopi med ændret efternavn
 var modified = original with { LastName = "Hansen" };
 
 Console.WriteLine(original); // Person { FirstName = Mette, LastName = Frederiksen }

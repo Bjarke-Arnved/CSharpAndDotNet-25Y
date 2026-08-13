@@ -90,7 +90,7 @@ public class Person
         set 
         {
             if (value < 0)
-                throw new ArgumentOutOfRangeException("Alder kan ikke være negativ");
+                throw new ArgumentOutOfRangeException(nameof(value), "Alder kan ikke være negativ");
             _age = value;
         }
     }
