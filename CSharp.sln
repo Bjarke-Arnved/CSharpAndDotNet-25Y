@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lektion02", "Lektion02", "{A323F8D5-1FC1-435D-B9FD-DD856D566B44}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave01", "Lektion01\Opgave01\Opgave01.csproj", "{D57A9130-1C39-46BD-BA55-2988E4D76B56}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lektion01", "Lektion01", "{D6114DE5-9F91-4DBA-9A2B-A15D5BEA042E}"
@@ -18,12 +16,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Slides", "Slides", "{944F83
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave02", "Lektion01\Opgave02\Opgave02.csproj", "{444CFE99-39E7-427F-8371-DDA038075B95}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Slides", "Slides", "{A66D2C94-6527-4AF3-A4D9-D0ADE3DAC4C1}"
+	ProjectSection(SolutionItems) = preProject
+		Lektion02\Slides\linq.md = Lektion02\Slides\linq.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lektion02", "Lektion02", "{7C655354-8F22-4776-9C6E-E049DD63A7A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{A66D2C94-6527-4AF3-A4D9-D0ADE3DAC4C1} = {7C655354-8F22-4776-9C6E-E049DD63A7A0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 	EndGlobalSection
