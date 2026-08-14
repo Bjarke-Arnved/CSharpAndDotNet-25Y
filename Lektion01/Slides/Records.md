@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 header: 'C# Records'
-footer: 'C# & .NET Undervisning'
+footer: 'C# & .NET'
 ---
 
 # Records i C#

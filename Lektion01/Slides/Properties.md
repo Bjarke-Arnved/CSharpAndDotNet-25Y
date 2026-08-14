@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 header: 'C# Properties'
-footer: 'C# & .NET Undervisning'
+footer: 'C# & .NET'
 ---
 
 # Properties i C#
@@ -131,6 +131,7 @@ public class Person
     public Person(string id) => Id = id;
 }
 ```
+---
 
 ### Init-Only (C# 9+)
 Tillader tildeling under **Object Initialization**, men kan ikke ændres bagefter.
@@ -163,6 +164,8 @@ public class Rectangle
     public double Area => Width * Height;
 }
 ```
+
+---
 
 ### Kort get/set syntaks:
 ```csharp

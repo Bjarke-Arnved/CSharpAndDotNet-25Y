@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 header: '.NET Økosystemet'
-footer: 'C# & .NET Undervisning'
+footer: 'C# & .NET'
 ---
 
 # Introduktion til .NET Økosystemet
@@ -111,8 +111,8 @@ dotnet new console -n MinApp
 # Gå til mappen
 cd MinApp
 
-# Tilføj en NuGet pakke (f.eks. Newtonsoft.Json)
-dotnet add package Newtonsoft.Json
+# Tilføj en NuGet pakke (f.eks. Scalar)
+dotnet add package AspNetCore.Scalar
 
 # Kør applikationen
 dotnet run
