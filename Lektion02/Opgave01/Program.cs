@@ -1,19 +1,20 @@
-using System.Text.Json;
+﻿using System.Text.Json;
+using Opgave01.model;
 
-namespace Opgave02;
+namespace Opgave01;
 
-public class Program
+class Program
 {
-    static void Main(string[] args)
+  static void Main(string[] args)
+  {
+    var jsonOptions = new JsonSerializerOptions
     {
-        string json = GetPotterJson();
-        
-        // TODO: Deserialiser JSON-strengen til en liste af objekter (opret en model i Opgave02/model mappen)
-        // TODO: Udskriv navn og kollegium (HogwartsHouse) for alle karakterer
-    }
+      PropertyNameCaseInsensitive = true
+    };
+    var characters = JsonSerializer.Deserialize<List<Character>>(GetPotterJson(), jsonOptions);
+  }
 
-
-    public static string GetPotterJson()
+  public static string GetPotterJson()
     {
         return """
                [
