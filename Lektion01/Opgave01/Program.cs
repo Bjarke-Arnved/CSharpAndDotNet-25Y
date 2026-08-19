@@ -15,12 +15,14 @@ class Program
 
                 // Opgave 1.2: Serialiser et Order-objekt til JSON med pæn formatering (WriteIndented)
                 Order order = GetOrder();
-        // TODO: Serialiser 'order' til en JSON-streng med WriteIndented = true og udskriv den til konsollen
-
+                // TODO: Serialiser 'order' til en JSON-streng med WriteIndented = true og udskriv den til konsollen
+                JsonSerializerOptions options = new JsonSerializerOptions() { WriteIndented = true};
+                Console.WriteLine(JsonSerializer.Serialize(order, options));
 
         // Opgave 1.3: Serialiser en liste af ordrer (List<Order>) til JSON
         List<Order> orders = GetOrders();
-        // TODO: Serialiser 'orders' til en JSON-streng og udskriv den til konsollen
+                // TODO: Serialiser 'orders' til en JSON-streng og udskriv den til konsollen
+                Console.WriteLine(JsonSerializer.Serialize(order).ToString());
     }
 
     public static Item GetItem()
