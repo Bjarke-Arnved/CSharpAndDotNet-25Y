@@ -67,3 +67,4 @@ nunit-*.xml
 **/.idea/**/*.iml
 **/.idea/**/contentModel.xml
 **/.idea/**/modules.xml
+/.vs/CSharp/FileContentIndex
