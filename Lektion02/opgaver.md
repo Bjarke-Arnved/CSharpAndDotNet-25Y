@@ -15,3 +15,4 @@ Brug Linq til at løse nedenstående opgaver ud fra `SeedData` i projektet `Opga
 1. Find alle produkter i kategorien `Category.Elektronik`, som er på lager (`StockCount > 0`).
 2. Udskriv navn og pris for disse produkter, sorteret efter pris i faldende rækkefølge (dyreste først).
 3. Find alle kunder fra byen **"Aarhus"** og udskriv deres navne.
+4. Find alle kunder der har bestilt en kontorstol.
