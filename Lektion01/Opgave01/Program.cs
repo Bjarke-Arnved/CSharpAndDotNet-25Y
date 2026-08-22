@@ -22,7 +22,7 @@ class Program
         // Opgave 1.3: Serialiser en liste af ordrer (List<Order>) til JSON
         List<Order> orders = GetOrders();
                 // TODO: Serialiser 'orders' til en JSON-streng og udskriv den til konsollen
-                Console.WriteLine(JsonSerializer.Serialize(order).ToString());
+                Console.WriteLine(JsonSerializer.Serialize(orders).ToString());
     }
 
     public static Item GetItem()
