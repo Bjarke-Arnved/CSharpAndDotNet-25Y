@@ -68,3 +68,4 @@ nunit-*.xml
 **/.idea/**/contentModel.xml
 **/.idea/**/modules.xml
 /.vs/CSharp/FileContentIndex
+/.vs/CSharp/v18
