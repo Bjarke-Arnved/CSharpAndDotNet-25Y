@@ -12,6 +12,12 @@ class Program
       PropertyNameCaseInsensitive = true
     };
     var characters = JsonSerializer.Deserialize<List<Character>>(GetPotterJson(), jsonOptions);
+
+        var FullNameAndHouse = characters.Where(ch => ch.HogwartsHouse.Any());
+        foreach(Character ch in FullNameAndHouse)
+                {
+                        Console.WriteLine($"{ch.FullName} is from {ch.HogwartsHouse} house");
+                }
   }
 
   public static string GetPotterJson()
