@@ -8,10 +8,7 @@ Brug Linq til at løse nedenstående opgaver.
 2. Udskriv alle karakterer, der tilhører kollegiet **Gryffindor**.
 3. Udskriv navnene på de karakterer, der har børn (`Children.Count > 0`), samt børnenes navne.
 
-
----
-
-### Opgave 3: Filtrering og sortering i webshop-data
+### Opgave 2: Filtrering og sortering i webshop-data
 
 Brug Linq til at løse nedenstående opgaver ud fra `SeedData` i projektet `Opgave02`.
 

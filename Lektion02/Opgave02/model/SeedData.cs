@@ -30,7 +30,13 @@ public static class SeedData
             new(102, DateTime.Now.AddDays(-30), new() { new(Kontorstol, 1) }),
             new(103, DateTime.Now.AddDays(-2), new() { new(Skaerm, 2) })
         }),
-        new(3, "Clara Møller", "Aarhus", new() { }),
+        new(3, "Clara Møller", "Aarhus", new()
+        {
+            new Order(105, DateTime.Now.AddDays(-7), new List<OrderItem>()
+            {
+                new(Kontorstol, 1), new(Mus, 2)
+            })
+        }),
         new(4, "David Olsen", "Odense", new() {
             new(104, DateTime.Now.AddDays(-5), new() { new(Vandkoger, 1) })
         })
