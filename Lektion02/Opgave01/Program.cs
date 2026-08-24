@@ -14,9 +14,18 @@ class Program
     var characters = JsonSerializer.Deserialize<List<Character>>(GetPotterJson(), jsonOptions);
 
         var FullNameAndHouse = characters.Where(ch => ch.HogwartsHouse.Any());
+
+                var CharactersFromGryffindor = characters.Where(ch => ch.HogwartsHouse.Equals("Gryffindor"));
+
         foreach(Character ch in FullNameAndHouse)
                 {
                         Console.WriteLine($"{ch.FullName} is from {ch.HogwartsHouse} house");
+                }
+                Console.WriteLine();
+                        Console.WriteLine("Characters form Gryffindor");
+                foreach(Character ch in CharactersFromGryffindor)
+                {
+                        Console.WriteLine(ch.FullName);
                 }
   }
 
