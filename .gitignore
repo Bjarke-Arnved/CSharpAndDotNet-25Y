@@ -69,3 +69,4 @@ nunit-*.xml
 **/.idea/**/modules.xml
 /.vs/CSharp/FileContentIndex
 /.vs/CSharp/v18
+/.vs/CSharp/CopilotIndices/18.9.1319.62376
