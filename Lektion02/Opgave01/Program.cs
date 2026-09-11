@@ -12,7 +12,24 @@ class Program
       PropertyNameCaseInsensitive = true
     };
     var characters = JsonSerializer.Deserialize<List<Character>>(GetPotterJson(), jsonOptions);
-  }
+
+                if(characters != null)
+                {
+                        Console.WriteLine("All characters: ");
+                        characters.ToList()
+                                .ForEach(c => Console.WriteLine($"{c.FullName} is from {c.HogwartsHouse}"));
+                        Console.WriteLine();
+                        Console.WriteLine("Only characters from gryffindor:");
+                        characters.Where(c => c.HogwartsHouse.Equals("Gryffindor"))
+                                .ToList()
+                                .ForEach(c => Console.WriteLine($"{c.FullName} is from {c.HogwartsHouse}"));
+                        Console.WriteLine();
+                        Console.WriteLine("Characters with children and there names: ");
+                        characters.Where(c => c.Children.Count > 0)
+                                .ToList()
+                                .ForEach(c => { Console.WriteLine($"{c.FullName} and there children: "); c.Children.ForEach(c => Console.WriteLine(c)); });
+                }
+        }
 
   public static string GetPotterJson()
     {
