@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Opgave02.model;
 
 namespace Opgave02;
 
@@ -7,10 +8,39 @@ public class Program
     static void Main(string[] args)
     {
         string json = GetPotterJson();
-        
-        // TODO: Deserialiser JSON-strengen til en liste af objekter (opret en model i Opgave02/model mappen)
-        // TODO: Udskriv navn og kollegium (HogwartsHouse) for alle karakterer
-    }
+
+                // TODO: Deserialiser JSON-strengen til en liste af objekter (opret en model i Opgave02/model mappen)
+                JsonSerializerOptions options = new() { PropertyNameCaseInsensitive = true};
+                var potterCharacters = JsonSerializer.Deserialize<List<PotterCharacter>>(json, options);
+                // TODO: Udskriv navn og kollegium (HogwartsHouse) for alle karakterer
+                if(potterCharacters != null)
+                {
+                        Console.WriteLine("List of Harry Potter characters and there house:");
+                        potterCharacters.ForEach(c => Console.WriteLine("Name: " + c.FullName + " House: " + c.HogwartsHouse));
+                        Console.WriteLine();
+                        Console.WriteLine("Characters from Gryffindor:");
+                        potterCharacters.Where(c => c.HogwartsHouse.Equals("Gryffindor"))
+                                .ToList()
+                                .ForEach(c => Console.WriteLine(c.FullName));
+                        Console.WriteLine();
+                        Console.WriteLine("Names of characters with children and names of children");
+                       
+                        foreach (PotterCharacter ch in potterCharacters)
+                        {
+                                if(ch.Children.Length > 0)
+                                {
+                                        Console.WriteLine("Character name: " + ch.FullName);
+                                        Console.WriteLine("Names of children: ");
+                                        foreach(string name in ch.Children)
+                                        {
+                                                Console.WriteLine(name);
+                                        }
+                                        Console.WriteLine();
+                                }
+                        }
+                }
+                
+        }
 
 
     public static string GetPotterJson()
