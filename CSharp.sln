@@ -66,7 +66,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave03", "Lektion02\Opgav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion03Opgave04", "Lektion03Opgave04\Lektion03Opgave04.csproj", "{9A1FE8A0-BE26-4EAA-B365-3C81F26D5DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion04", "Lektion04\Lektion04.csproj", "{3AE36991-A2A3-973F-CE94-577E8C959368}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion04Opgave01", "Lektion04\Lektion04Opgave01.csproj", "{3AE36991-A2A3-973F-CE94-577E8C959368}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lektion04", "Lektion04", "{49F59582-0802-450A-86D4-F37CF90B4408}"
+	ProjectSection(SolutionItems) = preProject
+		Lektion04\lektion04Opgaver.md = Lektion04\lektion04Opgaver.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,6 +162,7 @@ Global
 		{F3EF88CD-9699-4B0E-82B0-A78511B63B05} = {D6114DE5-9F91-4DBA-9A2B-A15D5BEA042E}
 		{54E4B475-2289-40A2-9FC0-2F39349538B2} = {7C655354-8F22-4776-9C6E-E049DD63A7A0}
 		{9A1FE8A0-BE26-4EAA-B365-3C81F26D5DCC} = {C41A957E-057E-405E-A495-83706CD7D7CA}
+		{3AE36991-A2A3-973F-CE94-577E8C959368} = {49F59582-0802-450A-86D4-F37CF90B4408}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {890CE603-420A-4B86-9C5E-24278DDCA3BE}
